@@ -1,3 +1,35 @@
 #include "gpio.h"
 #include "../matrix.h"
 #include "matrix_hal/gpio_control.h"
+
+matrix_hal::GPIOControl gpio_control;
+
+gpio::gpio(){
+    // setup hal GPIO
+    gpio_control.Setup(&bus);
+}
+gpio::~gpio(){}
+
+// - Set GPIO Pin state (digital)
+// Paramters: int pin (0-15), int mode (0=INPUT or 1=OUTPUT)
+bool gpio::setMode(int pin, int mode){
+    return gpio_control.SetMode(pin, mode);
+}
+
+// - Set GPIO Pin function
+// Parameters: int pin (0-15), int function (0=DIGITAL or 1=PWM)
+bool gpio::setFunction(int pin, int function){
+    return gpio_control.SetFunction(pin, function);
+}
+
+// - Read GPIO Pin state (digital only)
+int gpio::getValue(int pin){
+    return gpio_control.GetGPIOValue(pin);
+}
+
+// - Read all GPIO Pin states (digital only)
+// returned as a 16bit integer 
+int gpio::getValues(){
+    return gpio_control.GetGPIOValues();
+}
+

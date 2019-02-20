@@ -3,6 +3,7 @@
 %{
 #include "matrix.h"
 #include "./drivers/everloop.h"
+#include "./drivers/gpio.h"
 #include "./drivers/sensors/sensors.h"
 %}
 
@@ -14,4 +15,5 @@
 // Exposes header files
 %include "matrix.h"
 %include "./drivers/everloop.h"
+%include "./drivers/gpio.h"
 %include "./drivers/sensors/sensors.h"
