@@ -33,14 +33,12 @@ int gpio::getValues(){
     return gpio_control.GetGPIOValues();
 }
 
-// - Read all GPIO Pin states (digital only)
-// returned as a 16bit integer 
+// - Set GPIO Pin Digital
 bool gpio::setDigital(int pin, int value){
     return gpio_control.SetGPIOValue(pin, value);
 }
 
 // - Set GPIO Pin PWM
-// Parameters: float frequency, float percentage, int pin (0-15)
 bool gpio::setPWM(int pin, float percentage, float frequency){
     return gpio_control.SetPWM(frequency, percentage, pin);
 }
