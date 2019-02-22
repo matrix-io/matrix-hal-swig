@@ -10,13 +10,14 @@ We currently use this wrapper to implement Python support for HAL.
 - [matrix-lite-py](https://github.com/matrix-io/matrix-lite-py)
 
 # Roadmap
+The checklist below is the current progress for achieving a basic wrapper of HAL. In the future, if needed, more functions can be added.
 - [x] Leds
 - [x] Sensors
   - [x] IMU
   - [x] Humidity
   - [x] Pressure
   - [x] UV
-- [ ] GPIO
+- [x] GPIO
 - [ ] Microphones
 
 # Development Dependencies
