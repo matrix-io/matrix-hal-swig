@@ -42,3 +42,8 @@ bool gpio::setDigital(int pin, int value){
 bool gpio::setPWM(int pin, float percentage, float frequency){
     return gpio_control.SetPWM(frequency, percentage, pin);
 }
+
+// - Set Servo angle through PWM
+bool gpio::setServoAngle(int pin, float angle, float min_pulse_ms){
+    return gpio_control.SetServoAngle(angle, min_pulse_ms, pin);
+}
