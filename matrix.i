@@ -1,4 +1,4 @@
-%module matrix
+%module halSwig
 
 %{
 #include "matrix.h"
