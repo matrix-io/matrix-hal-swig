@@ -2,7 +2,7 @@
 #define SENSORS_SENSOR_H
 
 // IMU //
-struct imu_struct {
+struct imu_values {
     // Accelerometer Output
     float accel_x;
     float accel_y;
@@ -26,11 +26,11 @@ class imu {
     imu();
     ~imu();
 
-    imu_struct read();
+    imu_values read();
 };
 
 // UV //
-struct uv_struct {
+struct uv_values {
     float uv;
 };
 
@@ -39,11 +39,11 @@ class uv {
     uv();
     ~uv();
 
-    uv_struct read();
+    uv_values read();
 };
 
 // Humidity //
-struct humidity_struct {
+struct humidity_values {
     float humidity;
     float temperature;
 };
@@ -53,11 +53,11 @@ class humidity {
     humidity();
     ~humidity();
 
-    humidity_struct read();
+    humidity_values read();
 };
 
 // Pressure //
-struct pressure_struct {
+struct pressure_values {
     float altitude;
     float pressure;
     float temperature;
@@ -68,7 +68,7 @@ class pressure {
     pressure();
     ~pressure();
 
-    pressure_struct read();
+    pressure_values read();
 };
 
 #endif

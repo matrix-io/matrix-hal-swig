@@ -13,8 +13,8 @@ humidity::humidity(){
 humidity::~humidity(){}
 
 // - Returns sensor data
-humidity_struct humidity::read(){
-    humidity_struct data;
+humidity_values humidity::read(){
+    humidity_values data;
 
     // Update output values
     humidity_sensor.Read(&humidity_data);

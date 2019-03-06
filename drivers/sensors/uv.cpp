@@ -13,8 +13,8 @@ uv::uv(){
 uv::~uv(){}
 
 // - Returns sensor data
-uv_struct uv::read(){
-    uv_struct data;
+uv_values uv::read(){
+    uv_values data;
 
     // Update output values
     uv_sensor.Read(&uv_data);

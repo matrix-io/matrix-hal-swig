@@ -13,8 +13,8 @@ pressure::pressure(){
 pressure::~pressure(){}
 
 // - Returns sensor data
-pressure_struct pressure::read(){
-    pressure_struct data;
+pressure_values pressure::read(){
+    pressure_values data;
 
     // Update output values
     pressure_sensor.Read(&pressure_data);

@@ -13,8 +13,8 @@ imu::imu(){
 imu::~imu(){}
 
 // - Returns sensor data
-imu_struct imu::read(){
-    imu_struct data;
+imu_values imu::read(){
+    imu_values data;
 
     // Update output values
     imu_sensor.Read(&imu_data);
