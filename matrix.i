@@ -4,10 +4,11 @@
 #include "matrix.h"
 #include "./drivers/everloop.h"
 #include "./drivers/gpio.h"
+#include "./drivers/info.h"
 #include "./drivers/sensors/sensors.h"
 %}
 
-// Array templates (template names are irrelevant)
+// Array templates
 %include "std_vector.i"
 %template(everloopImage) std::vector<led>;// array of leds
 // %template(integerList) std::vector<int>; // array of ints
@@ -16,4 +17,5 @@
 %include "matrix.h"
 %include "./drivers/everloop.h"
 %include "./drivers/gpio.h"
+%include "./drivers/info.h"
 %include "./drivers/sensors/sensors.h"
