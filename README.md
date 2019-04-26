@@ -1,5 +1,4 @@
 # matrix-hal-swig
-> **Under Development**
 
 A [SWIG](https://github.com/swig/swig) wrapper for [MATRIX HAL](https://matrix-io.github.io/matrix-documentation/matrix-hal/overview/).
 
