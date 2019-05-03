@@ -6,8 +6,8 @@ This repository is meant for those who want to have MATRIX HAL functionality for
 
 We currently use this wrapper to implement Python and Ruby support for HAL.
 
-- [matrix-lite-py](https://github.com/matrix-io/matrix-lite-py)
-- [matrix-lite-rb](https://github.com/matrix-io/matrix-lite-rb)
+- Python: [matrix-lite-py](https://github.com/matrix-io/matrix-lite-py)
+- Ruby: [matrix-lite-rb](https://github.com/matrix-io/matrix-lite-rb)
 
 # Roadmap
 The checklist below is the current progress for achieving a basic wrapper of HAL. In the future, if needed, more functions can be added.
