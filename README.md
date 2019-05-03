@@ -4,9 +4,10 @@ A [SWIG](https://github.com/swig/swig) wrapper for [MATRIX HAL](https://matrix-i
 
 This repository is meant for those who want to have MATRIX HAL functionality for a [SWIG supported language](http://www.swig.org/compat.html).
 
-We currently use this wrapper to implement Python support for HAL.
+We currently use this wrapper to implement Python and Ruby support for HAL.
 
 - [matrix-lite-py](https://github.com/matrix-io/matrix-lite-py)
+- [matrix-lite-rb](https://github.com/matrix-io/matrix-lite-rb)
 
 # Roadmap
 The checklist below is the current progress for achieving a basic wrapper of HAL. In the future, if needed, more functions can be added.
