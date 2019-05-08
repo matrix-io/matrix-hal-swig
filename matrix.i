@@ -1,5 +1,6 @@
 %module halSwig
 
+// Import header files
 %{
 #include "matrix.h"
 #include "./drivers/everloop.h"
@@ -13,7 +14,7 @@
 %template(everloopImage) std::vector<led>;// array of leds
 // %template(integerList) std::vector<int>; // array of ints
 
-// Exposes header files
+// Expose header files
 %include "matrix.h"
 %include "./drivers/everloop.h"
 %include "./drivers/gpio.h"
