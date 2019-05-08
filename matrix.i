@@ -11,7 +11,7 @@
 
 // Array templates
 %include "std_vector.i"
-%template(everloopImage) std::vector<led>;// array of leds
+%template(everloopImage) std::vector<led>; // array of leds
 // %template(integerList) std::vector<int>; // array of ints
 
 // Expose header files
