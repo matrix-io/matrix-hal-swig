@@ -4,7 +4,7 @@ A [SWIG](https://github.com/swig/swig) wrapper for [MATRIX HAL](https://matrix-i
 
 This repository is meant for those who want to have MATRIX HAL functionality for a [SWIG supported language](http://www.swig.org/compat.html).
 
-Below are the projects using this wrapper:
+Below are the projects currently using this wrapper:
 
 - Ruby: [matrix-lite-rb](https://github.com/matrix-io/matrix-lite-rb)
 
